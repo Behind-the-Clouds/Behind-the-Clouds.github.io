@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Bijection Between Real Numbers and Complex Numbers</title>
+      <link href="/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/"/>
+      <url>/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p> reference: </p><ul><li><a href="https://www.reddit.com/r/askscience/comments/6opvae/simplest_proof_that_r2_r/">an answer on reddit.com</a></li><li><a href="https://math.byu.edu/~bakker/M341/Lectures/Lec06.pdf">a lecture note, found with google search</a></li></ul><p>Some proofs are done by myself and might be faulty.</p></blockquote><h2 id="Discussion-on-Uniqueness-of-Decimal-Expansion"><a href="#Discussion-on-Uniqueness-of-Decimal-Expansion" class="headerlink" title="Discussion on Uniqueness of Decimal Expansion"></a>Discussion on Uniqueness of Decimal Expansion</h2><ul><li>Assume a real number $x$ has two different decimal expansion $N.d_1d_2\cdots$ and $N.d_1’d_2’ \cdots$, with $d_1 = d_1’, \cdots d_{k-1} = d_{k-1}’ , d_k &gt; d_k’$<ul><li>if $d_k &gt; d_k’ + 1$, then even with $d_{k+1} = d_{k+2} = \cdots = 0$ and $d_{k+1}’=d_{k+2}’ = \cdots =9$ the difference between the two decimal expansion would still be $10^{-k}$ and they can’t possibly represent the same real number $x$.</li><li>if $d_k = d_k’ + 1$, the only way to make the two expansions equal is to have $d_{k+1} = d_{k+2} = \cdots = 0$ and $d_{k+1}’ = d’_{k+2} = \cdots = 9$. This implies $x$ is rational and the denominator is a divisor of $10^k$.</li></ul></li><li>Thus, we get to the conclusion that $x$ has 2 different decimal presentations iff $x$ is rational and the only primes that divide the denominator are 2 or 5.</li></ul><h2 id="Construct-the-bijection-between-mathbb-C-and-mathbb-R"><a href="#Construct-the-bijection-between-mathbb-C-and-mathbb-R" class="headerlink" title="Construct the bijection between $\mathbb C$ and $\mathbb R$"></a>Construct the bijection between $\mathbb C$ and $\mathbb R$</h2><p>One can see that $\mathbb R \approx \mathbb Z \times [0, 1)$ (consider the isomorphism $\phi: x \mapsto ([x], x - [x])$). Then $\mathbb C \approx \mathbb R^2  \approx \mathbb Z^2 \times [0, 1)^2 \approx \mathbb Z \times [0, 1)^2$. This means if we can find some bijection $f$ between $[0, 1)^2$ and $[0,1 )$ then we are done.</p><p>Consider the decimal expansion for $(x, y) \in [0, 1)^2$ where $x = 0.d_1d_2 \cdots, y = 0.c_1c_2\cdots$. A naive construction of $f$ is</p>$$f: (0.d_1d_2d_3 \cdots, 0.c_1c_2c_3\cdots )\mapsto 0.d_1c_1d_2c_2d_3c_3\cdots$$<p>However, this mapping is not well-defined, as it maps $(0.0999999999\cdots , 0), (0.1, 0)$ to different numbers although they are essentially the same point. The problem arises from the 2 different decimal presentations of the same number. From previous discussion, we know infinitely repeating 9 is the only case that this construction fails.</p><p>What if we add a constraint that, if there are multiple representations possible, we only use the $000 \cdots$ version to calculate the image of $f$? (You can also choose $99999\cdots$ version, and use $0$ as “marker” in the next paragraph. Here I take just $000\cdots$ for illustration) This will make $f$ well-defined and injective, but still not surjective, because numbers such as $0.0909090909 \cdots$ will have no preimage. </p><p>Note that the problem with $f^{-1}$ is essentially that, it could map a decimal expansion without repeating 9 to an expansion containing repeating 9. What about, instead of working with discrete digits, we work with digit blocks that never end with 9? For example, $0.32394999799099992\cdots$ would be seen as $0.(3)(2)(3)(94)(9997)(990)(9992)\cdots$, and $f(0.(3)(993)(0), 0.(4)(93)(92)) = 0.(3)(4)(993)(93)(0)(92)$. In this way the image contains infinitely repeating 9 iff its preimage does and vice versa. Then with the limitation that we only use $00000\cdots$ (instead of $99999\cdots$) version of decimal presentation, $f$ turns out a well-defined bijection and we’re done.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes on Supplementary Reading </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/03/07/hello-world/"/>
+      <url>/2023/03/07/hello-world/</url>
+      
+        <content type="html"><![CDATA[<h2 id="subtitle"><a href="#subtitle" class="headerlink" title="subtitle"></a>subtitle</h2><h3 id="subsubtitle"><a href="#subsubtitle" class="headerlink" title="subsubtitle"></a>subsubtitle</h3>$$\begin{gather*}\int_0^a f(x) dx\\f'(x) = \{\mathbf{a}\} \wedge \mathbb  R^n\\\mathrm {xyz}\\\begin{bmatrix}\end{bmatrix} \begin{Bmatrix} \end{Bmatrix} \begin{pmatrix} \end{pmatrix} \begin{vmatrix}\end{vmatrix} \begin{Vmatrix}\end{Vmatrix}\\\cdots \ddots \vdots\\\begin{array}{|c|cc}1 & 2 & 3\\\hline3 & 4 & 5 \\6 & 7 & 8\end{array}\\b \equiv a\pmod p\\\nabla, \Re, \aleph\\\prec, \cong, \sim, \approx\\\star, \ast, \bullet, \circ\\\lnot, \neg, \vdash, \vDash\\\varnothing, \emptyset, \supset, \subseteq, \subseteqq \setminus\end{gather*}$$<p>inline formula: $f(x) \in \mathcal L(A, B)$.</p><p>中文字可以正常显示。</p><h2 id="中文子标题"><a href="#中文子标题" class="headerlink" title="中文子标题"></a>中文子标题</h2><div class="pdf-container" data-target="/files/test/test-pdf-GEM053.pdf" data-height="500px"></div><p>test image:</p><p><img src="/img/test/test-image.png" alt=""></p><p>（本地用<code>../img/test/test-image.png</code>就可以在本地正常看见</p><p>或者用图床：</p><p><a href="https://www.linkpicture.com/view.php?img=LPic6408b6167c7cd1203070296"><img src="https://www.linkpicture.com/q/test-image.png" alt="image"></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test my blog </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
