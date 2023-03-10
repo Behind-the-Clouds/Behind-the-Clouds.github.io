@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/comments/index.html</loc>
+    <loc>https://behind-the-clouds.github.io/Comments/index.html</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -67,6 +67,13 @@
 
   
   <url>
+    <loc>https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/</loc>
+    <lastmod>2023-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -75,13 +82,6 @@
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/Notes-on-Combinatorics/</loc>
-    <lastmod>2023-03-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/</loc>
     <lastmod>2023-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
