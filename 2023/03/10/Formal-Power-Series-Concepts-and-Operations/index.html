@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"behind-the-clouds.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="view the Chinese version of this article on zhihu.com: 1, 2, 3 reference:  Appendix 2, A Course in Combinatorics by Lint Wilson   Definitions and NotationsFormal Power Series, Addition, Multiplicatio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Formal Power Series: Concepts and Operations">
+<meta property="og:url" content="https://behind-the-clouds.github.io/2023/03/10/Formal-Power-Series-Concepts-and-Operations/index.html">
+<meta property="og:site_name" content="Clouds&#39; blog">
+<meta property="og:description" content="view the Chinese version of this article on zhihu.com: 1, 2, 3 reference:  Appendix 2, A Course in Combinatorics by Lint Wilson   Definitions and NotationsFormal Power Series, Addition, Multiplicatio">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-10T06:30:05.000Z">
+<meta property="article:modified_time" content="2023-03-10T10:00:14.209Z">
+<meta property="article:author" content="Behind_the_Clouds">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://behind-the-clouds.github.io/2023/03/10/Formal-Power-Series-Concepts-and-Operations/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://behind-the-clouds.github.io/2023/03/10/Formal-Power-Series-Concepts-and-Operations/","path":"2023/03/10/Formal-Power-Series-Concepts-and-Operations/","title":"Formal Power Series: Concepts and Operations"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Formal Power Series: Concepts and Operations | Clouds' blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Clouds' blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section">Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">About</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section">Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section">Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Definitions-and-Notations"><span class="nav-number">1.</span> <span class="nav-text">Definitions and Notations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Formal-Power-Series-Addition-Multiplication"><span class="nav-number">1.1.</span> <span class="nav-text">Formal Power Series, Addition, Multiplication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multiplicative-Inverse"><span class="nav-number">1.2.</span> <span class="nav-text">Multiplicative Inverse</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quotient-Field-and-Laurent-Series"><span class="nav-number">1.3.</span> <span class="nav-text">Quotient Field and Laurent Series</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Derivative"><span class="nav-number">2.</span> <span class="nav-text">Derivative</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exponential-and-Logarithm"><span class="nav-number">3.</span> <span class="nav-text">Exponential and Logarithm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inverse-Function"><span class="nav-number">4.</span> <span class="nav-text">Inverse Function</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Important-Lemma"><span class="nav-number">4.1.</span> <span class="nav-text">Important Lemma</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lagrange-Inversion-Theorem"><span class="nav-number">4.2.</span> <span class="nav-text">Lagrange Inversion Theorem</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Behind_the_Clouds</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Behind-the-Clouds" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Behind-the-Clouds" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://behind-the-clouds.github.io/2023/03/10/Formal-Power-Series-Concepts-and-Operations/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Behind_the_Clouds">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Clouds' blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Formal Power Series: Concepts and Operations | Clouds' blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Formal Power Series: Concepts and Operations
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-03-10 14:30:05 / Modified: 18:00:14" itemprop="dateCreated datePublished" datetime="2023-03-10T14:30:05+08:00">2023-03-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Notes-on-Combinatorics/" itemprop="url" rel="index"><span itemprop="name">Notes on Combinatorics</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <blockquote>
+<p>view the Chinese version of this article on zhihu.com: <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/611762702">1</a>, <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/611820941">2</a>, <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/611829272">3</a></p>
+<p>reference:</p>
+<ul>
+<li>Appendix 2, <em>A Course in Combinatorics</em> by Lint Wilson</li>
+</ul>
+</blockquote>
+<h2 id="Definitions-and-Notations"><a href="#Definitions-and-Notations" class="headerlink" title="Definitions and Notations"></a>Definitions and Notations</h2><h3 id="Formal-Power-Series-Addition-Multiplication"><a href="#Formal-Power-Series-Addition-Multiplication" class="headerlink" title="Formal Power Series, Addition, Multiplication"></a>Formal Power Series, Addition, Multiplication</h3><p>Consider the set $\mathbb C^{\mathbb N_0} := \{(a_0, a_1, \cdots ) \mid \forall i \in \mathbb N_0, a_i \in \mathbb C\}$.</p>
+<p>Let’s say two elements $\mathbf a = (a_0, a_1, \cdots ), \mathbf b = (b_0, b_1, \cdots ) \in \mathbb C^{\mathbb N_0}$ are <strong>equal</strong> iff $\forall i \in \mathbb N_0, a_i = b_i$.</p>
+<p>Define <strong>addition</strong> as $\mathbf a + \mathbf b = (a_0 + b_0, a_1 + b_1, a_2 + b_2, \cdots )$. Define <strong>multiplication</strong> as $\mathbf a \cdot \mathbf b = (c_0, c_1, \cdots )$ where $c_n = \sum_{i=0}^n a_i b_{n-i}$.</p>
+<p>Speaking of algebraic structure, this set is actually an integral domain with unity be $(1, 0, 0, \cdots )$ (and this can be immediately seen from the properties illustrated below). But this is not important and it’s possible not to use any conclusions in abstract algebra in the following proofs, which is what I’ll do in this article.</p>
+<p>Consider the notation $z := (0, 1, 0, 0, \cdots )$. By definition of multiplication we have $z^n = (0,0, \cdots 0, 1, 0, \cdots )$ where there are $n$ leading 0s before the 1, and $z^0$ be the multiplicative identity $(1, 0, 0, \cdots )$. It follows that $(a_0, a_1, a_2 \cdots ) = a_0 + a_1z + a_2z^2 + \cdots = \sum_{i=0}^\infty a_i z^i$, the latter being most renowned notation for <strong>formal power series</strong>.</p>
+<p>Formally speaking, we define a <strong>formal power series</strong> to be a specific element in $\mathbb C^{\mathbb N_0}$, denoted by $\mathbf a = (a_0, a_1, a_2, \cdots )$ or $a(z) = \sum_{i=0}^\infty a_i z^i$. We denote the set of all formal power series by $\mathbb C[[z]]$.</p>
+<p>Note that this notation looks just like polynomials and our definition of multiplication and addition consists with that on polynomials.</p>
+<p>We have only defined addition and multiplication of finite number of formal power series. <strong>Addition and multiplication of infinite number of formal power series</strong> are allowed if for any finite $n$, the coefficients of $z^n$ in the result can be written as sum of finite non-zero terms; in other words, we don’t allow <em>addition of infinite non-zero terms</em> (as the limit doesn’t always exist). For example, $\sum_{i=0}^\infty (1 + z)^i$ is illegal because the constant of the result is infinite 1s adding together; however $\prod_{i=0}^\infty (1 + z^{i} + z^{2i} + \cdots )$ is legal. Moreover, <strong>composition of two formal power series</strong> $f(g(z)) = \sum_{i=0}^\infty f_i (g(z))^i$ is allowed iff constant of $g(z)$ is 0.</p>
+<p>In addition, we define the <strong>order</strong> of a formal power series as $d(\mathbf a) = \min \{ k \mid k \in \mathbb N_0, a_k \neq 0 \}$.</p>
+<h3 id="Multiplicative-Inverse"><a href="#Multiplicative-Inverse" class="headerlink" title="Multiplicative Inverse"></a>Multiplicative Inverse</h3><p>Is the multiplication on formal power series invertible? In fact, we’ll see multiplicative inverse of $\mathbf a$ exists iff $a_0 \neq 0$, and is unique if it exists at all.</p>
+<p>Define the <strong>multiplicative inverse</strong> of a formal power series $\mathbf a$ be formal power series $\mathbf b$ that satisfies $\mathbf a \mathbf b = 1 = (1, 0, 0, \cdots )$.</p>
+<ul>
+<li>If $a_0 = 0$, it easily follows that for any $\mathbf b$, $(\mathbf a \mathbf b)_0 = 0 \neq 1$, so $\mathbf a$ is irreversible.</li>
+<li>If $a_0 \neq 0$, we can get a unique recursive expression of $\mathbf b$ immediately from the definition, namely $b_0 = \frac{1}{a_0}, b_n = - a_0^{-1} \sum_{i=1}^n a_ib_{n-i}$, so $\mathbf a^{-1}$ exists and is unique.</li>
+</ul>
+<h3 id="Quotient-Field-and-Laurent-Series"><a href="#Quotient-Field-and-Laurent-Series" class="headerlink" title="Quotient Field and Laurent Series"></a>Quotient Field and Laurent Series</h3><p>The “quotient field of formal power series” is actually the set (actually it’s a field) of quotients of formal power series, formally defined as follows:</p>
+<p>Consider the set $F = \{ \frac{a(z)}{b(z)} \mid a(z), b(z) \in \mathbb C[[z]]\}$ and define</p>
+<ul>
+<li>equivalence relation: we say two elements $\frac{a(z)}{b(z)}, \frac{c(z)}{d(z)}$ are <strong>equal</strong> iff $a(z) d(z) = b(z)c(z)$.</li>
+<li>multiplication: $\frac{a(z)}{b(z)} \cdot \frac{c(z)}{d(z)} = \frac{a(z)c(z)}{b(z) d(z)}$</li>
+<li>addition: $\frac{a(z)}{b(z)} + \frac{c(z)}{d(z)} = \frac{a(z)d(z) + b(z) c(z)}{b(z) d(z)}$</li>
+</ul>
+<p>For a invertible formal power series $b(z)$, note that $\frac{a(z)}{b(z)} = \frac{a(z) (b(z))^{-1}}{1}$ by definition.</p>
+<p>Now consider Laurent series $p(z) = \sum_{n=k}^\infty a_nz^n$ where $k \in \mathbb Z, a_k \neq 0$. Note that a Laurrent series must be in $F$ because</p>
+<ul>
+<li>when $k \ge 0$, $p(z) = \frac{p(z)}{1} \in F$</li>
+<li>when $k &lt; 0$, $p(z) = \frac{\sum_{n=0}^\infty a_{n+k} z^n}{z^{-k}} \in F$</li>
+</ul>
+<p>Further more, we can actually say that any element in $F$ can be represented as a Laurent series:</p>
+<ul>
+<li>An observation is that if $a(z)$ is formal power series, $\frac{a(z)}{z^m}$ would then be a Laurent series.</li>
+<li>For $\frac{a(z)}{b(z)}$, let $m = d(\mathbf b)$, then obviously $\frac{b(z)}{z^m}$ is invertible and $\frac{a(z)}{b(z)} = \frac{\frac{a(z)}{x^m}}{\frac{b(z)}{x^m}} = \frac{a(z) \cdot (\frac{b(z)}{z^m})^{-1}}{z^m}$ is Laurent series.</li>
+</ul>
+<p>Moreover, define the <strong>residue</strong> of a Laurent series $b(z)$ be the coefficient of $z^{-1}$, denoted by $Res(b(z))$.</p>
+<h2 id="Derivative"><a href="#Derivative" class="headerlink" title="Derivative"></a>Derivative</h2><p>For formal  power series $f(z) = \sum_{n=0}^\infty f_n z^n$, define its derivative $(Df)(z) = f’(z) = \sum_{n=0}^\infty f_{n+1}(n+1) z^n$. One can see this definition consists with that on polynomials.</p>
+<p>We’ll prove the following rules for calculating derivative of formal power power series:</p>
+<ol>
+<li>$(f(z) + g(z))’ = f’(z) + g’(z)$</li>
+<li>$(f(z)g(z))’ = f’(z)g(z) + g’(z)f(z)$</li>
+<li>$f^k(z) = kf^{k-1}(z)f’(z)$</li>
+<li>$(f(g(z)))’ = f’(g(z))\cdot g’(z)$</li>
+</ol>
+<p>pf 1.: omitted.</p>
+<p>pf 2.: $(f(z) g(z) )’ = \sum_{i\ge0, j\ge 0, i+j&gt;0} f_ig_j (i+j)z^{i+j-1}$ and $f’(z)g(z) + g’(z)f(z) = (\sum_{i &gt; 0, j\ge 0} f_ig_j\cdot i \cdot  z^{i+j- 1}) + (\sum_{i\ge 0, j &gt; 0} f_i g_j \cdot j \cdot z^{i+j-1}) = \sum_{i\ge 0, j\ge 0, i+ j &gt; 0}f_i g_j (i+j)z^{i+j-1} =(f(z)g(z))’$</p>
+<p>pf 3.: see $f^k(z)$ as $f(z) \cdot f(z) \cdot \cdots$ and by applying rule 2. we are done.</p>
+<p>pf 4.: $(f(g(z)))’ = (\sum_{i=0}^\infty f_i g^i(z))’ = \sum_{i=0}^\infty f_i  \cdot i \cdot g^{i-1}(z) \cdot g’(z) = f’(g(z)) g’(z)$</p>
+<blockquote>
+<p>remark: Up to now, we have shown the addition, multiplication, composition and derivative on formal power series all consist with that on polynomials. This means we can often write a formal power series as “the Taylor series of some function”, which is called the closed form of this formal power series. Operations of the above 4 types on this function is equivalent to operations on its Taylor series, so operations on the closed form (obeying the same rules as corresponding numerical functions) are equivalent to operations on formal power series. This is very useful in some problems.</p>
+</blockquote>
+<h2 id="Exponential-and-Logarithm"><a href="#Exponential-and-Logarithm" class="headerlink" title="Exponential and Logarithm"></a>Exponential and Logarithm</h2><p>Define $\exp (z): = \sum_{n=0}^\infty \frac{z^n}{n!}, \log (1 + z) := \sum_{n=1}^\infty (-1)^n \frac{z^n}{n}$. In this context, $\exp(z), \log (1 + z)$ are defined to be two very special formal power series, and they actually possesses similar properties as the exponential function and logarithm function do, which are</p>
+<ol>
+<li>$\frac{1}{\exp(z)} = \exp(-z)$</li>
+<li>$(\exp(x))^k = \exp(kx), k\in \mathbb Z^+$</li>
+<li>$D(\exp(z)) = \exp (z)$</li>
+<li>$D(\log (1 + z) )=\frac{1}{1 + z}$</li>
+<li>$\log(\exp (z) ) = z$</li>
+</ol>
+<p>pf 1.: $\exp(z) \cdot \exp(-z) = (\sum_{n=0}^\infty \frac{x^n}{n!}) (\sum_{n=0}^\infty (-1)^n \frac{x^n}{n!}) = \sum_{n=0}^\infty \frac{x^n}{n!} \sum_{i=0}^n \binom{n}{i} (-1)^i = 1$</p>
+<p>pf 2.: $(\exp(z))^k = \sum_{n = 0}^\infty \frac{z^n}{n!}\sum_{i_1 + i_2 + \cdots i_k = n, i_t \ge 0}  \binom{n}{i_1, i_2, \cdots i_k} = \sum_{n=0}^\infty \frac{z^n}{n!} \cdot k^n = \sum_{n = 0}^ \infty \frac{(zk)^n }{n!} = \exp(kz)$</p>
+<p>pf 3. and 4.: Omitted (just follow the definition!)</p>
+<p>pf 5.: Because $D(\log (\exp(z))) = D\log (\exp z) \cdot D \exp (z) = \frac{1}{\exp z} \cdot \exp z = 1$, we know $[z^1] (\log (\exp(z))) = 1,[z^n] (\log (\exp(z))) = 0(n&gt;0)$ and by definition we know constant in $\log (\exp(z)) = 0$.</p>
+<h2 id="Inverse-Function"><a href="#Inverse-Function" class="headerlink" title="Inverse Function"></a>Inverse Function</h2><p>Define composition of two formal power series $f, g$ to be $(f \circ g) (z) = f(g(z)) := \sum_{i=0}^\infty f_i (g(z))^i$. By definition you see composition is associative.</p>
+<p>For two formal power series $f(z), g(z)$ with zero coefficient for $z^0$ and non-zero coefficient for $z^1$, if $f(g(z)) = z$, we say $f(z)$ is the <strong>inverse function</strong> of $g(z)$, or the inverse in the sense of function composition. This inverse has two very good properties:</p>
+<ol>
+<li>For any $g(z)$ with zero coefficient for $z^0$ and non-zero coefficient for $z^1$, this inverse exists and is unique.<ol>
+<li>pf: Let’s try to find such $f$. Obviously $f_1 = \frac{1}{g_1}$; expand $f\circ g$ by definition we have $0 = [z^n] f(g(z)) = f_1 \cdot ([z^n]g(z)) + f_2 ([z^n]g^2(z)) + \cdots + f_n ([z^n]g^n(z)) $. Thus, $f_n$ can always be uniquely determined through recursion.</li>
+</ol>
+</li>
+<li><p>This inverse is symmetric. In other words, $f(g(z))  = z \Leftrightarrow g(f(z)) = z$.</p>
+<ol>
+<li>pf: Let the unique inverse of $f(z)$ be $g_1(z)$. Then $(f \circ g ) ( z) = z \Rightarrow (g_1 \circ f \circ g ) ( z) = g_1(z) \Rightarrow ((g_1 \circ f ) \circ g)(z) = g_1(z) \Rightarrow (Id \circ g(z)) = g_1(z) \Rightarrow g(z) = g_1(z)$.</li>
+</ol>
+<p>Next, we’ll introduce a method to calculate inverse of a formal power series efficiently.</p>
+</li>
+</ol>
+<h3 id="Important-Lemma"><a href="#Important-Lemma" class="headerlink" title="Important Lemma"></a>Important Lemma</h3><p>Let $w(z)$ be a Laurent series. We claim that</p>
+<ol>
+<li>$Res(w’(z)) = 0$<ol>
+<li>it follows immediately by definition of derivative.</li>
+</ol>
+</li>
+<li>$Res(w’(z)/w(z)) = d(w(z))$, where $d(w(z))$ stands for the order of $w(z)$<ol>
+<li>$\frac{w’(z)}{w(z)} = \frac{1}{z^k}\cdot \frac{\sum_{n=k-1}^\infty (n+1) w_{n+1}z^{n}}{\sum_{n=0}^\infty w_{n+k}z^n} = \frac{1}{z^k} \cdot (\sum_{n=k-1}^\infty (n+1)w_{n+1}z^n) \cdot (\sum_{n=0} w_{n+k}z^n)^{-1}$, the term with the smallest degree on the RHS is exactly $\frac{1}{z^k} \cdot (k w_k z^{k-1}) \cdot (w_k)^{-1} = k \cdot z^{-1}$.</li>
+</ol>
+</li>
+</ol>
+<h3 id="Lagrange-Inversion-Theorem"><a href="#Lagrange-Inversion-Theorem" class="headerlink" title="Lagrange Inversion Theorem"></a>Lagrange Inversion Theorem</h3><p>Here we’ll use a bit idea of Lagrange inversion theorem and the special case of the complete conclusion.</p>
+<p>Let $W(z) = \sum_{i=0}^\infty  w_iz^i$ be a formal power series with zero coefficient for $z^0$ and non-zero coefficient for $z^1$, $Z(w) = c_1w + c_2 w^2 + \cdots$ be another formal power series and $Z(W(z)) = z$. We claim that $c_n = Res(\frac{1}{nW^n(z)})$.</p>
+<p>pf:</p>
+<ol>
+<li>For $n = 1$, $c_1 = w_1^{-1} = Res(\frac{1}{W(z)})$</li>
+<li>For $n &gt; 1$,<ol>
+<li>Consider $D(Z\circ W)$, we have $1 = \sum_{i=0}^\infty c_{i+1} \cdot (i+1) \cdot W^{i} (z) W’(z) \Rightarrow \frac{1}{W^{n}(z)} = \sum_{i=0}^\infty c_{i+1}(i+1) W^{i-n}(z)W’(z)$.</li>
+<li>Calculate residue on both side:<ol>
+<li>LHS: $Res(\frac{1}{W^n(z)})$</li>
+<li>RHS: When $i \neq n-1$, the term can be seen as derivative of $const \cdot W^{i-n+1}$, which has residue 0 by lemma above; for $i = n-1$, the residue is $c_{n} \cdot n \cdot Res(\frac{W’(z)}{W(z)}) = c_n \cdot n$</li>
+</ol>
+</li>
+<li>It follows that $Res(\frac{1}{W^n(z)}) = c_n \cdot n \Rightarrow c_n = Res(\frac{1}{n W^n(z)})$</li>
+</ol>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/" rel="prev" title="Bijection Between Real Numbers and Complex Numbers">
+                  <i class="fa fa-chevron-left"></i> Bijection Between Real Numbers and Complex Numbers
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-champagne-glasses"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Behind_the_Clouds</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js","integrity":"sha256-tu9j5pBilBQrWSDePOOajCUdz6hWsid/lBNzK4KgEPM="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
