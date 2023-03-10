@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://behind-the-clouds.github.io/2023/03/07/hello-world/</loc>
+    <loc>https://behind-the-clouds.github.io/Comments/index.html</loc>
+    
+    <lastmod>2023-03-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://behind-the-clouds.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-03-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://behind-the-clouds.github.io/about/index.html</loc>
     
     <lastmod>2023-03-10</lastmod>
     
@@ -22,25 +40,16 @@
   <url>
     <loc>https://behind-the-clouds.github.io/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/</loc>
     
-    <lastmod>2023-03-09</lastmod>
+    <lastmod>2023-03-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/categories/index.html</loc>
+    <loc>https://behind-the-clouds.github.io/2023/03/07/hello-world/</loc>
     
-    <lastmod>2023-03-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://behind-the-clouds.github.io/about/index.html</loc>
-    
-    <lastmod>2023-03-08</lastmod>
+    <lastmod>2023-03-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
