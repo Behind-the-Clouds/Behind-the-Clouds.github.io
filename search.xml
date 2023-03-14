@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Asymptotic Behavior of Number of Partitions</title>
+      <link href="/2023/03/14/Asymptotic-Behavior-of-Number-of-Partitions/"/>
+      <url>/2023/03/14/Asymptotic-Behavior-of-Number-of-Partitions/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><ul><li>OGF of partition of $n$ into at most $k$ parts: $p_{\le k}(n) = \prod_{i=1}^k \frac{1}{1 - z^i}$</li><li>Our goal is to analyse the aymptotic behavior of the coefficient of $z^n$ when $n \to \infty$ with fixed $k$.</li></ul><h2 id="Rewrite-with-Poles"><a href="#Rewrite-with-Poles" class="headerlink" title="Rewrite with Poles"></a>Rewrite with Poles</h2><ul><li><p>We can rewrite $p_{\le k}(n)$ into the form $\prod_{j=1}^k \prod_{l =1}^j \frac{1}{z - e^{2\pi i \cdot \frac{l}{j}}} = \prod_{j=1}^{k}\prod_{l \in [1,j], l\perp j} \frac{1}{\left(z - e^{2\pi i \cdot \frac{l}{j}}\right)^{\lfloor \frac{k}{j} \rfloor} } $. Those roots of unity are called poles with multiplicities.</p></li><li><p>Recall that we can write such a rational function as $p_{\le k}(n)$ as $\sum_{z_0 \text{ is a pole}, r \le \text{multiplicity}} \frac{c_{r, z_0}}{(z - z_0)^r}$ where $c$ is a constant</p></li><li><p>Now analyse the behavior of some specific $\frac{c}{(z - z_0)^r}$:</p><ul><li>$$  \begin{gather*}  c \cdot (z - z_0)^{-r} = \sum_{n=0}^\infty c \binom{-r}{n}(-z_0)^{-r - n} z^n\\  = \sum_{n=0}^\infty c (-1)^{n}\binom{n + r - 1}{r - 1} (-z_0)^{- r - n} z^n  \end{gather*}$$</li><li><p>Because $|z_0| = 1$, it is of no significance for asymptotic analysis</p></li><li>Note that $\binom{n + r - 1}{r - 1}$ is actually a $r$-degree polynomial of $n$, $c(z)$ is a polynomial with $\le r$ degree.</li></ul></li><li><p>Then, for asymptotic behavior of $p_{\le k}(n)$, we only care about the term with biggest $r$, which is $c(1 - z)^{-k}$</p></li></ul><h2 id="Determine-Asymptotic-Behavior"><a href="#Determine-Asymptotic-Behavior" class="headerlink" title="Determine Asymptotic Behavior"></a>Determine Asymptotic Behavior</h2><ul><li>$p_{\le k } ( z) = \frac{c_{k, 1}}{(1 - z)^k} + O\left(( 1 - z)^{-(k-1)}\right)$, as coefficients in $(1-z)^{-(k-1)}$ are of no asymtotic importance.</li><li>To calculate $c_{k, 1}$, consider $\left. (1 - z)^k p_{\le k(z)} \right|_{z = 1} = c_{k, 1}$, and $LHS = \prod_{i=1}^k \frac{1 - z}{1 - z^i} = \prod_{i=1}^k \frac{1}{1 + z + \cdots + z^{i-1}}$, take $z = 1$ we get $c_{k, 1} = \frac{1}{k!}$</li><li>Thus $[x^n] p_{\le k}(z) \sim c_{k, 1}\binom{n+k-1}{k-1} = \frac{1}{k!} \cdot \frac{n^{k-1}}{(k-1)!}$</li></ul><h2 id="Cor"><a href="#Cor" class="headerlink" title="Cor"></a>Cor</h2><ul><li>Number of partitions of $n$ into exactly $k$ parts, $p_k (n) \sim p_{\le k}(n) \sim \frac{n^{k-1}}{k! (k-1)!}$<ul><li>consider $p_k(n) = p_{\le k}(n) - p_{\le k-1}(n) \sim p_{\le k}(n)$</li><li>or, we may also apply the same method as analysis above, and get the same result (omitted).</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Notes on Combinatorics </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Formal Power Series: Concepts and Operations</title>
       <link href="/2023/03/10/Formal-Power-Series-Concepts-and-Operations/"/>
       <url>/2023/03/10/Formal-Power-Series-Concepts-and-Operations/</url>
