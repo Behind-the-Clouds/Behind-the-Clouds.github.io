@@ -13,4 +13,4 @@ https://behind-the-clouds.github.io/categories/Notes-on-Combinatorics/
 https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/
 https://behind-the-clouds.github.io/categories/test-my-blog/
 https://behind-the-clouds.github.io/categories/Notes-on-Abstract-Algebra/
-https://behind-the-clouds.github.io/categories/Notes-on-Combinatorics-Supplementary-Reading-Abstract-Algebra-OI-ACM/
+https://behind-the-clouds.github.io/categories/OI-ACM/
