@@ -270,7 +270,7 @@ $$
 f: (0.d_1d_2d_3 \cdots, 0.c_1c_2c_3\cdots )\mapsto 0.d_1c_1d_2c_2d_3c_3\cdots$$<p>However, this mapping is not well-defined, as it maps $(0.0999999999\cdots , 0), (0.1, 0)$ to different numbers although they are essentially the same point. The problem arises from the 2 different decimal presentations of the same number. From previous discussion, we know infinitely repeating 9 is the only case that this construction fails.</p>
 <p>What if we add a constraint that, if there are multiple representations possible, we only use the $000 \cdots$ version to calculate the image of $f$? (You can also choose $99999\cdots$ version, and use $0$ as “marker” in the next paragraph. Here I take just $000\cdots$ for illustration) This will make $f$ well-defined and injective, but still not surjective, because numbers such as $0.0909090909 \cdots$ will have no preimage. </p>
 <p>Note that the problem with $f^{-1}$ is essentially that, it could map a decimal expansion without repeating 9 to an expansion containing repeating 9. What about, instead of working with discrete digits, we work with digit blocks that never end with 9? For example, $0.32394999799099992\cdots$ would be seen as $0.(3)(2)(3)(94)(9997)(990)(9992)\cdots$, and $f(0.(3)(993)(0), 0.(4)(93)(92)) = 0.(3)(4)(993)(93)(0)(92)$. In this way the image contains infinitely repeating 9 iff its preimage does and vice versa. Then with the limitation that we only use $00000\cdots$ (instead of $99999\cdots$) version of decimal presentation, $f$ turns out a well-defined bijection and we’re done.</p>
-
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     

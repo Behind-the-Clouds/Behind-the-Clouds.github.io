@@ -9,8 +9,8 @@ https://behind-the-clouds.github.io/2023/03/10/Formal-Power-Series-Concepts-and-
 https://behind-the-clouds.github.io/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/
 https://behind-the-clouds.github.io/2023/03/07/hello-world/
 https://behind-the-clouds.github.io/
+https://behind-the-clouds.github.io/categories/Notes-on-Abstract-Algebra/
 https://behind-the-clouds.github.io/categories/Notes-on-Combinatorics/
 https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/
 https://behind-the-clouds.github.io/categories/test-my-blog/
-https://behind-the-clouds.github.io/categories/Notes-on-Abstract-Algebra/
 https://behind-the-clouds.github.io/categories/OI-ACM/
