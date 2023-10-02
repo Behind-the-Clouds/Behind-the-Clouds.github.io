@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://behind-the-clouds.github.io/2023/10/01/More-on-GCD-Domains/</loc>
+    
+    <lastmod>2023-10-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://behind-the-clouds.github.io/2023/04/13/Matrix-Tree-Theorem/</loc>
     
     <lastmod>2023-10-01</lastmod>
@@ -103,7 +112,7 @@
 
   <url>
     <loc>https://behind-the-clouds.github.io/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -113,35 +122,35 @@
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/Notes-on-Combinatorics/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/Notes-on-Abstract-Algebra/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/OI-ACM/</loc>
-    <lastmod>2023-10-01</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
