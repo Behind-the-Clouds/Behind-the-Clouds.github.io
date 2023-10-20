@@ -8,25 +8,36 @@
   <title>DRAW LOTS</title>
 
   <style>
-    .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    }
+	.button {
+	    border: 0; /* 取消按钮的边界 */
+	    width: 100%; /* 设置合适的按钮的长和宽 */
+	    height: 100px;
+		font: 24px "Comic Sans MS", cursive, sans-serif;
+		/* 修改按钮文字的字体和大小 */
+	    font-size: 32px;
+		/* 修改按钮文字的大小 */
+	    color: black; /* 修改按钮上文字的颜色 */
+	    border-radius: 40px; /* 将按钮的左右边框设置为圆弧 */
+	    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); /* 为按钮增加渐变颜色 */
+		cursor: pointer;
+		opacity: 0.7;
+	}
+	body{
+		background-image: linear-gradient(to right, #9b9952 0%,rgb(94, 166, 194) 100%);
+	}
   </style>
 
 </head>
 
 
-<body>
+<body style="text-align: center" >
   <div id="draw-lots">
-		<input type="button" class="button" value="DRAW LOTS" onclick="drawLots()" style="display: block" />
-    	<hr>
+		<label>
+			<button class="button">
+				<input type="button" class="button" value="DRAW LOTS" onclick="drawLots()" style="text-align: center" />
+	    	</button>
+		</label>
+		<hr>
   </div>
 
   <script>
@@ -42,6 +53,7 @@
         var num = Math.floor(Math.random() * numImgs);
         var img = document.createElement("img");
         img.src = "images/" + num + ".png";
+		img.style.width = "80%";
         document.getElementById("draw-lots").appendChild(img);
 
 		numClicks ++;
@@ -52,6 +64,7 @@
 </body>
 
 </html>
+
 
 
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
