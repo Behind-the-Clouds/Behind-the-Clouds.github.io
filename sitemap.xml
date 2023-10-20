@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://behind-the-clouds.github.io/files/other-pages/take-a-draw/index.html</loc>
+    <loc>https://behind-the-clouds.github.io/files/other-pages/draw-lots/index.html</loc>
     
     <lastmod>2023-10-20</lastmod>
     
@@ -137,13 +137,6 @@
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/</loc>
-    <lastmod>2023-10-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://behind-the-clouds.github.io/categories/Notes-on-Abstract-Algebra/</loc>
     <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -151,7 +144,7 @@
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
+    <loc>https://behind-the-clouds.github.io/categories/Notes-on-Supplementary-Reading/</loc>
     <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -159,6 +152,13 @@
   
   <url>
     <loc>https://behind-the-clouds.github.io/categories/OI-ACM/</loc>
+    <lastmod>2023-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
     <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
