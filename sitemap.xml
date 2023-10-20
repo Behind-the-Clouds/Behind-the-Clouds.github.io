@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://behind-the-clouds.github.io/files/other-pages/draw-lots/23333.html</loc>
+    
+    <lastmod>2023-10-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://behind-the-clouds.github.io/2023/03/09/Bijection-Between-Real-Numbers-and-Complex-Numbers/</loc>
     
     <lastmod>2023-10-02</lastmod>
@@ -151,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/categories/OI-ACM/</loc>
+    <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
     <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://behind-the-clouds.github.io/categories/test-my-blog/</loc>
+    <loc>https://behind-the-clouds.github.io/categories/OI-ACM/</loc>
     <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
