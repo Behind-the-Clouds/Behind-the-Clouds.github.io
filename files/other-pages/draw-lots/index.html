@@ -25,30 +25,28 @@
 
 <body>
   <div id="draw-lots">
-		<input type="button" class="button" value="DRAW LOTS" onclick="drawLots()" />
-    <input type="button" class="button" value="RESET" onclick="reset()" />
-    <hr>
+		<input type="button" class="button" value="DRAW LOTS" onclick="drawLots()" style="display: block" />
+    	<hr>
   </div>
 
   <script>
       var numImgs = 16;
-      var numClicks = 0;
+	  var numClicks = 0;
 
       function drawLots() {
+	  	
+		if(numClicks > 0) {
+			document.getElementById("draw-lots").removeChild(document.getElementById("draw-lots").lastChild);
+		}
+
         var num = Math.floor(Math.random() * numImgs);
         var img = document.createElement("img");
         img.src = "images/" + num + ".png";
-
         document.getElementById("draw-lots").appendChild(img);
-        numClicks++;
-      }
 
-      function reset() {
-        while(numClicks > 0) {
-          document.getElementById("draw-lots").removeChild(document.getElementById("draw-lots").lastChild);
-          numClicks--;
-        }
-      }
+		numClicks ++;
+
+	  }
 
   </script>
 </body>
